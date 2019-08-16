@@ -9,13 +9,27 @@
       import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
       import '@polymer/iron-demo-helpers/demo-snippet';
       import '../theme/lumo/vcf-webshare-button.js';
+      window.addEventListener('WebComponentsReady', () => document.querySelector('main').classList.remove('hidden'));
     </script>
     <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles"></style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        main {
+          opacity: 1;
+          transition: opacity 1s;
+        }
+        main.hidden {
+          opacity: 0;
+        }
+        .settings-list {
+          margin-top: 0;
+          padding-left: 0;
+          list-style-type: none;
+        }
+      </style>
     </custom-style>
   </head>
   <body>
-    <div class="vertical-section-container centered">
+    <main class="vertical-section-container centered hidden">
       <h3>Basic</h3>
       <demo-snippet>
         <template>
@@ -23,7 +37,13 @@
           <p><strong>Note:</strong> button will only show if the browser supports Web Share API.</p>
         </template>
       </demo-snippet>
-      <h3>Using all options</h3>
+      <h3>All settings</h3>
+      <ul class="settings-list">
+        <li><strong>share-url:</strong> The url which will be shared.</li>
+        <li><strong>share-title:</strong> Title used for native share.</li>
+        <li><strong>share-text:</strong> Description used for native share.</li>
+        <li><strong>share-button-text:</strong> Text shown inside native share button.</li>
+      </ul>
       <demo-snippet>
         <template>
           <vcf-webshare-button
@@ -35,6 +55,6 @@
           <p><strong>Note:</strong> button will only show if the browser supports Web Share API.</p>
         </template>
       </demo-snippet>
-    </div>
+    </main>
   </body>
 </html>
