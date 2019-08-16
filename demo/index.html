@@ -15,10 +15,24 @@
     </custom-style>
   </head>
   <body>
-    <div class="vertical-section-container">
+    <div class="vertical-section-container centered">
+      <h3>Basic</h3>
       <demo-snippet>
         <template>
           <vcf-webshare-button></vcf-webshare-button>
+          <p><strong>Note:</strong> button will only show if the browser supports Web Share API.</p>
+        </template>
+      </demo-snippet>
+      <h3>Using all options</h3>
+      <demo-snippet>
+        <template>
+          <vcf-webshare-button
+            share-url="https://vaadin.com/components"
+            share-text="Read about my awesome project"
+            share-title="My awesome project"
+            share-button-text="Share my awesome project"
+          ></vcf-webshare-button>
+          <p><strong>Note:</strong> button will only show if the browser supports Web Share API.</p>
         </template>
       </demo-snippet>
     </div>

@@ -1,7 +1,7 @@
 {
   "name": "@vaadin-component-factory/vcf-webshare-button",
   "version": "0.1.0",
-  "description": "Vaadin Component Factory Element",
+  "description": "Web Component for Web Share button",
   "main": "theme/lumo/vcf-webshare-button.js",
   "author": "Vaadin Ltd",
   "license": "https://raw.githubusercontent.com/vaadin/vaadin-incubator-element/master/LICENSE",
@@ -36,7 +36,10 @@
     ]
   },
   "dependencies": {
+    "@polymer/iron-icon": "^3.0.1",
+    "@polymer/iron-iconset-svg": "^3.0.1",
     "@polymer/polymer": "^3.0.0",
+    "@vaadin/vaadin-button": "^2.2.1",
     "@vaadin/vaadin-element-mixin": "^2.1.3",
     "@vaadin/vaadin-lumo-styles": "^1.5.0",
     "@vaadin/vaadin-themable-mixin": "^1.4.4"
