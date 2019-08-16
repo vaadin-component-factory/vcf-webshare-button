@@ -1,6 +1,6 @@
 {
   "name": "@vaadin-component-factory/vcf-webshare-button",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web Component for Web Share button",
   "main": "theme/lumo/vcf-webshare-button.js",
   "author": "Vaadin Ltd",
