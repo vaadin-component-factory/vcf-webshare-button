@@ -23,7 +23,7 @@ class VcfWebshareButton extends ElementMixin(ThemableMixin(PolymerElement)) {
         title="[[shareButtonText]]"
         hidden$="[[!browserCompatible]]"
       >
-        <iron-icon icon="taskmob:share" slot="prefix"></iron-icon>
+        <iron-icon icon="vcf:share" slot="prefix"></iron-icon>
         <span>[[shareButtonText]]</span>
       </vaadin-button>
     `;
@@ -34,7 +34,7 @@ class VcfWebshareButton extends ElementMixin(ThemableMixin(PolymerElement)) {
   }
 
   static get version() {
-    return '0.1.1';
+    return '0.2.0';
   }
 
   static get properties() {
@@ -65,9 +65,8 @@ class VcfWebshareButton extends ElementMixin(ThemableMixin(PolymerElement)) {
   }
 
   openWebShare() {
-    if (window.ga) {
-      window.ga('send', 'event', 'Sharing', 'native api used');
-    }
+    this.dispatchEvent(new CustomEvent('vcf-webshare-native-api-used', { bubbles: true, composed: true }));
+
     navigator
       .share({
         title: this.shareTitle,

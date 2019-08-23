@@ -35,6 +35,18 @@
         <template>
           <vcf-webshare-button></vcf-webshare-button>
           <p><strong>Note:</strong> button will only show if the browser supports Web Share API.</p>
+          <script>
+            window.addEventListener('WebComponentsReady', () => {
+              const webshareButton = document.querySelector('vcf-webshare-button');
+              /*
+               * The component fires a custom event:
+               *  - vcf-webshare-native-api-used: when the native share API is used
+               */
+               webshareButton.addEventListener('vcf-webshare-native-api-used', () => {
+                console.log('Native API used');
+              });
+            });
+          </script>
         </template>
       </demo-snippet>
       <h3>All settings</h3>
