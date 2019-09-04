@@ -33,10 +33,6 @@ class VcfWebshareButton extends ElementMixin(ThemableMixin(PolymerElement)) {
     return 'vcf-webshare-button';
   }
 
-  static get version() {
-    return '0.2.0';
-  }
-
   static get properties() {
     return {
       shareUrl: String,

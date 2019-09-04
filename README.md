@@ -1,6 +1,8 @@
 # &lt;vcf-webshare-button&gt;
 
+## Demo
 
+https://vcf-webshare-button.netlify.com/
 
 ## Installation
 
@@ -28,7 +30,7 @@ import '@vaadin-component-factory/vcf-webshare-button/vcf-webshare-button.js';
 
 ## Contributing
 
-  To contribute to the component, please read [the guideline](https://github.com/vaadin/vaadin-core/blob/master/CONTRIBUTING.md) first.
+To contribute to the component, please read [the guideline](https://github.com/vaadin/vaadin-core/blob/master/CONTRIBUTING.md) first.
 
 ## License
 
