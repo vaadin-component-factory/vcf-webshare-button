@@ -15,7 +15,7 @@ npm i @vaadin-component-factory/vcf-webshare-button --save
 Once installed, import it in your application:
 
 ```js
-import '@vaadin-component-factory/vcf-webshare-button/vcf-webshare-button.js';
+import '@vaadin-component-factory/vcf-webshare-button';
 ```
 
 ## Running demo
