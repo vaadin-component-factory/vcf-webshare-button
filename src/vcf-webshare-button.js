@@ -95,7 +95,3 @@ customElements.define(VcfWebshareButton.is, VcfWebshareButton);
  * @namespace Vaadin
  */
 window.Vaadin.VcfWebshareButton = VcfWebshareButton;
-
-if (window.Vaadin.runIfDevelopmentMode) {
-  window.Vaadin.runIfDevelopmentMode('vaadin-license-checker', VcfWebshareButton);
-}
